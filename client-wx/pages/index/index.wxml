@@ -1,0 +1,10 @@
+<view class="container">
+  <button bind:tap="accountLogin" style="{{buttonStyle}}">账号登录</button>
+  <button bind:tap="phoneLogin" style="{{buttonStyle}}">手机号登录</button>
+
+  <view style="{{textStyle}}" class="logined">
+    <text>Welcome</text>
+    <image src="/images/tabbar/exit.png" mode="widthFix" bind:tap="exit" />
+  </view>
+
+</view>

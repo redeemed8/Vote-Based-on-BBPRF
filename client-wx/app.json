@@ -1,0 +1,51 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/question/question",
+    "pages/vote/vote",
+    "pages/account/account",
+    "pages/phone/phone",
+    "pages/register/register",
+    "pages/new_question/new_question",
+    "pages/new_vote/new_vote",
+    "pages/add_question/add_question",
+    "pages/detail_questionnaire/detail_questionnaire",
+    "pages/detail_vote/detail_vote",
+    "pages/voting/voting"
+  ],
+  "window": {
+    "backgroundColor": "#efefef",
+    "backgroundTextStyle": "dark",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "mini",
+    "navigationBarBackgroundColor": "#201D1E"
+  },
+  "tabBar": {
+    "list": [{
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/images/tabbar/index.png",
+        "selectedIconPath": "/images/tabbar/index-a.png"
+      },
+      {
+        "pagePath": "pages/question/question",
+        "text": "问卷",
+        "iconPath": "/images/tabbar/q.png",
+        "selectedIconPath": "/images/tabbar/q-a.png"
+      },
+      {
+        "pagePath": "pages/vote/vote",
+        "text": "投票",
+        "iconPath": "/images/tabbar/v.png",
+        "selectedIconPath": "/images/tabbar/v-a.png"
+      }
+    ],
+    "backgroundColor": "#201D1E",
+    "color": "#FFFFFF",
+    "selectedColor": "#EADE9A"
+  },
+  "style": "v2",
+  "componentFramework": "glass-easel",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}

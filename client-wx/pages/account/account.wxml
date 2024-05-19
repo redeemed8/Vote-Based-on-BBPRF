@@ -1,0 +1,20 @@
+<view class="container">
+  <view>
+    <text class="t">Login</text>
+    <view class="phone">
+      <input placeholder="账号" placeholder-class="inputplaceholder" bindinput="inputAccount"/>
+    </view>
+    <view class="verify">
+      <input  type="password" placeholder="密码" placeholder-class="inputplaceholder" bindinput="inputPassword"/>
+    </view>
+    <view class="login">
+      <button bind:tap="register">注册</button>
+      <button bind:tap="accountLogin">登录</button>
+    </view>
+  </view>
+</view>
+
+
+
+
+

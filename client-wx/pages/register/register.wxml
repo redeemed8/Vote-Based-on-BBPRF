@@ -1,0 +1,31 @@
+<view class="container">
+  <view>
+    <text class="t">Register</text>
+
+    <view class="account">
+      <input placeholder="设置账号" placeholder-class="inputplaceholder" bindinput="inputAccount" />
+    </view>
+
+    <view class="password">
+      <input placeholder="设置密码" type="password" placeholder-class="inputplaceholder" bindinput="inputPassword" />
+    </view>
+
+    <view class="repassword">
+      <input placeholder="确认密码" type="password" placeholder-class="inputplaceholder" bindinput="inputRepassword" />
+    </view>
+
+    <view class="phone">
+      <input placeholder="手机号" placeholder-class="inputplaceholder" bindinput="inputPhone" />
+    </view>
+
+    <view class="verify">
+      <input placeholder="验证码" placeholder-class="inputplaceholder" bindinput="inputVerify" />
+      <button bind:tap="getVerifyCode" disabled="{{disableButton}}">{{buttonText}}</button>
+    </view>
+
+    <view class="register">
+      <button bind:tap="registerAccount">注册</button>
+    </view>
+
+  </view>
+</view>

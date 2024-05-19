@@ -1,0 +1,7 @@
+server:
+  port: xxx
+
+mysql:
+  dns: xxx:xxx@tcp(xxx:xxx)
+  basename: xxx
+  others: charset=utf8mb4&parseTime=True&loc=Local

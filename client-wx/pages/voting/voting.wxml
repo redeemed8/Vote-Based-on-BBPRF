@@ -1,0 +1,40 @@
+<view wx:if="{{islogin}}" class="fff">
+
+  <!--标题-->
+  <view class="title">{{title}}</view>
+  <!--分割线-->
+  <view class="split-line"></view>
+
+  <!--选项-->
+  <view wx:for="{{optionNames}}" wx:key="index">
+
+    <view wx:if="{{optionTypes[index] === 0}}" class="option-f" style="border: 1px solid rgba(217, 203, 145, 0.7); color: rgba(240, 230, 140, 0.9);" bind:tap="selectOption" data-idx="{{index}}">
+      <view class="option-l">
+        {{optionL[index]}}
+      </view>
+      <view class="option-name">
+        . {{item}}
+      </view>
+    </view>
+
+    <view wx:if="{{optionTypes[index] === 1}}" class="option-f" style="border: 1px solid rgba(81, 218, 111, 0.6); color: rgba(81, 218, 111, 0.9);" bind:tap="selectOption" data-idx="{{index}}">
+      <view class="option-l">
+        {{optionL[index]}}
+      </view>
+      <view class="option-name">
+        . {{item}}
+      </view>
+    </view>
+
+  </view>
+
+  <view class="voteBtn" bind:tap="doVote">
+    <button>提交</button>
+  </view>
+
+</view>
+
+<view wx:if="{{!islogin}}" class="notLogin">
+  <text>你还未登录，请先登录</text>
+  <button bind:tap="toLogin">去登录</button>
+</view>

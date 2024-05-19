@@ -1,0 +1,20 @@
+<view class="container">
+  <view>
+    <text class="t">Login</text>
+    <view class="phone">
+      <input placeholder="手机号" placeholder-class="inputplaceholder" bindinput="inputPhone"/>
+    </view>
+    <view class="verify">
+      <input placeholder="验证码" placeholder-class="inputplaceholder" bindinput="inputVerify"/>
+      <button bind:tap="getVerifyCode" disabled="{{disableButton}}">{{buttonText}}</button>
+    </view>
+    <view class="login">
+      <button bind:tap="phoneLogin">登录</button>
+    </view>
+  </view>
+</view>
+
+
+
+
+

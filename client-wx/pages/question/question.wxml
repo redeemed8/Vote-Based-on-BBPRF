@@ -1,0 +1,40 @@
+<view class="container">
+  <view class="f" style="{{isShow}}">
+
+    <view class="search-bar">
+      <button class="newquestion-btn" bind:tap="newQuestion">+</button>
+      <view class="line"></view>
+      <input class="search-input" placeholder=" 请输入搜索关键词" value="{{keyword}}" bindinput="onKeywordSearch"></input>
+      <button class="search-button" bind:tap="searchQuestion">🔍</button>
+    </view>
+
+    <view class="questions">
+      <view class="question" bind:tap="questionDetail" wx:key="id" wx:for="{{questionList}}" data-id="{{item.id}}" data-title="{{item.title}}">
+        <view class="info">
+          <!--标题-->
+          <text>{{item.title}}</text>
+          <!--状态-->
+          <view class="info-2">
+            <text wx:if="{{item.status === 0}}" style="color: rgb(100,149,237);">●</text>
+            <text wx:if="{{item.status === 0}}" style="color: rgb(100,149,237);">未发布</text>
+            <text wx:if="{{item.status === 1}}" style="color: rgb(81, 218, 111);">✔</text>
+            <text wx:if="{{item.status === 1}}" style="color: rgb(81, 218, 111);">已发布</text>
+          </view>
+        </view>
+        <!--分割线-->
+        <view class="questionLine"></view>
+        <!--答卷数量-->
+        <view class="ansNum">
+          <text class="number">{{item.ans_number}}</text>
+          <text>答卷数量</text>
+        </view>
+      </view>
+    </view>
+
+    <view class="on-bottom">
+      <text wx:if="{{questionList.length > 0}}">已经到底了 ~</text>
+      <text wx:if="{{questionList.length <= 0}}">还没有问卷 ~</text>
+    </view>
+
+  </view>
+</view>
