@@ -121,6 +121,11 @@ Page({
 
 
   doVote(e) {
+    if (this.data.vvvoteLoading) {
+      return
+    }
+    this.setData({ vvvoteLoading: true });
+
     //  检查发布状态
     if (this.data.status === 0) {
       wx.showToast({
@@ -163,6 +168,7 @@ Page({
       mask: true
     });
     vvvote(this.data.vid, msg);
+    this.setData({ vvvoteLoading: false });
     wx.hideLoading();
   }
 
@@ -312,10 +318,6 @@ function verify(uc_, hsign_, vid_, msg_, r_, token_) {
 }
 
 function vvvote(vid, msg) {
-  if (this.data.vvvoteLoading) {
-    return
-  }
-  this.setData({ vvvoteLoading: true });
   let a = getRandomIntInRange(app.globalData.pk_s.N / 2);
   let b = getRandomIntInRange(app.globalData.pk_s.N / 2);
   let r = getRandomIntInRange(app.globalData.pk_s.N / 2);
@@ -375,6 +377,5 @@ function vvvote(vid, msg) {
       });
     }
   });
-  this.setData({ vvvoteLoading: false });
 }
 
