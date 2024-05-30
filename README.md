@@ -42,13 +42,13 @@ $$
 
 $$
 \begin{equation}
-state \quad {\small ←}\quad (a, \  b)
+tag \quad {\small ←}\quad v \quad {\small ←}\quad G^{[{u_c+H(mag)]}^{-1}} \quad {\small ←}\quad F_{DY}(u_c,\ H(msg))
 \end{equation}
 $$
 
 $$
 \begin{equation}
-tag \quad {\small ←}\quad v \quad {\small ←}\quad G^{[{u_c+H(mag)]}^{-1}} \quad {\small ←}\quad F_{DY}(u_c,\ H(msg))
+state \quad {\small ←}\quad (a, \  b)
 \end{equation}
 $$
 
