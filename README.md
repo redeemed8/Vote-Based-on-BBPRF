@@ -1,14 +1,15 @@
-# Vote-Based-on-VOPRF
-基于Vote-Based-on-VOPRF和SM2的投票系统
+# ***Vote-Based-on-VOPRF***
 
-首先生成公钥`N`,`G`,`Y`,`H`,
-
+## 基于Vote-Based-on-VOPRF和SM2的投票系统
 
 
+
+### 生成公钥
 
 $$
 \begin{equation}
-数学公式
+	N, G, Y , H,ct_u,ct_y
 \label{eq:当前公式名}
 \end{equation}
 $$
+
