@@ -8,7 +8,7 @@
 
 $$
 \begin{equation}
-	公钥\:\:\:\:N,\:G,\:Y,\:H,\:ct_u,\:ct_y
+	公钥\quad N,\:G,\:Y,\:H,\:ct_u,\:ct_y
 \end{equation}
 $$
 
