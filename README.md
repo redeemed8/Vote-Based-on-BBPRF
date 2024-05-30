@@ -32,7 +32,7 @@ $$
 
 $$
 \begin{equation}
-digest\quad {\small ←}\quad ct_β \quad {\small ←}\quad 
+digest\quad {\small ←}\quad ct_β \quad {\small ←}\quad Enc(pk_{cs}
 \end{equation}
 $$
 
