@@ -18,4 +18,14 @@ $$
 \end{equation}
 $$
 
-## 2.dd
+## ***2.客户端注册并获取公钥***
+
+### **·** &nbsp; 客户端登录
+
+### **·** &nbsp; 使用登录token到认证服务换取对应的私钥，并获取私钥的签名u<sub>c</sub>
+
+$$
+\begin{equation}
+
+\end{equation}
+$$
