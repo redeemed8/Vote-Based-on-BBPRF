@@ -2,6 +2,12 @@
 基于Vote-Based-on-VOPRF和SM2的投票系统
 
 首先生成公钥`N`,`G`,`Y`,`H`,
+
+
+
+
+
+[TEX]
 $$
 \begin{equation}
 数学公式
