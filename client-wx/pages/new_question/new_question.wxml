@@ -1,8 +1,0 @@
-<view class="container">
-  <view class="f">
-    <text>New Questionnaire</text>
-    <textarea maxlength="100" placeholder="请输入标题" bindinput="inputTitle"></textarea>
-    <text>还可输入 {{titleMaxLength-title.length}} / {{titleMaxLength}} 个字</text>
-    <button bind:tap="newQuestion">立即创建</button>
-  </view>
-</view>
