@@ -2,7 +2,7 @@
 
 ## 基于Vote-Based-on-VOPRF和SM2的投票系统
 
-### 
+<br>
 
 ## ***1.服务器密钥生成***
 
@@ -18,7 +18,7 @@ $$
 \end{equation}
 $$
 
-### 
+### <br>
 
 ## ***2.客户端注册并获取公钥***
 
@@ -30,7 +30,7 @@ $$
 \end{equation}
 $$
 
-### 
+### <br>
 
 ## ***3.客户端请求给盲化token签名***
 
@@ -52,7 +52,7 @@ tag \quad {\small ←}\quad v \quad {\small ←}\quad G^{[{u_c+H(mag)]}^{-1}} \q
 \end{equation}
 $$
 
-### 
+### <br>
 
 ## ***4.服务端给token签名***
 
@@ -78,7 +78,7 @@ blindPRF \quad {\small ←}\quad \{ \ F =G^{β^{-1}}, \ ... \  \}
 \end{equation}
 $$
 
-### 
+### <br>
 
 ## ***5.客户端对签名token进行去盲化***
 
@@ -88,7 +88,7 @@ tok  \quad {\small ←}\quad \tau \quad {\small ←}\quad F^a \quad {\small ←}
 \end{equation}
 $$
 
-### 
+### <br>
 
 ## ***6.向服务器验证token***
 
@@ -103,6 +103,20 @@ $$
 true\quad {\small ←}\quad token\ {\small ==}\ G^{{[m+u+ry]}^{-1}} \quad {\small ←}\quad tag\ not\ exist \quad {\small ←}\quad verify
 \end{equation}
 $$
+
+<br>
+
+<br>
+
+## SM2的使用
+
+#### ***1.客户端获取服务器VOPRF公钥时，一并获取公钥的sm2签名值***
+
+#### ***2.客户端获取私钥，一并获取私钥的sm2签名值，防止对签名的篡改***
+
+### ***3.客户端得到服务器签名后的盲化token时，一并得到其sm2签名值***
+
+<br>
 
 
 
