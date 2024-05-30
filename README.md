@@ -4,12 +4,18 @@
 
 
 
-## 1. 生成公钥
+## 1.***密钥生成***
 
 $$
 \begin{equation}
-	N, G, Y , H,ct_u,ct_y
-\label{eq:当前公式名}
+	公钥\:\:\:\:N,\:G,\:Y,\:H,\:ct_u,\:ct_y
 \end{equation}
 $$
 
+$$
+\begin{equation}
+私钥\:\:\:\:u_c,\:uc_{sign}
+\end{equation}
+$$
+
+## 2.dd
