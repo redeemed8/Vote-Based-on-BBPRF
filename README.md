@@ -4,17 +4,17 @@
 
 
 
-## 1.***密钥生成***
+## ***1.密钥生成***
 
 $$
 \begin{equation}
-	公钥\quad N,\,\,\, G,\:Y,\:H,\:ct_u,\:ct_y
+	公钥\quad N,\quad G,\quad Y,\quad H,\quad ct_u,\quad ct_y
 \end{equation}
 $$
 
 $$
 \begin{equation}
-私钥\:\:\:\:u_c,\:uc_{sign}
+私钥\quad x,\quad u,\quad y
 \end{equation}
 $$
 
