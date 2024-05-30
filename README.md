@@ -6,12 +6,9 @@
 
 
 
-
-[TEX]
 $$
 \begin{equation}
 数学公式
 \label{eq:当前公式名}
-aasd
 \end{equation}
 $$
