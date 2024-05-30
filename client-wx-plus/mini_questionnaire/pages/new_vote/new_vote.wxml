@@ -1,0 +1,29 @@
+<view class="f1">
+  <view class="photo-f">
+    <button bindtap="chooseImage" wx:if="{{imageUrl === ''}}">
+      <view class="photo-btn-1">+</view>
+      <view class="photo-btn-2">选择图片</view>
+    </button>
+    <image src="{{imageUrl}}" mode="aspectFill" wx:if="{{imageUrl}}" class="photo" />
+  </view>
+
+  <view class="title">
+    <view class="title-i">标题:</view>
+    <textarea class="title-area" placeholder="请输入标题" bindinput="titleChange"></textarea>
+  </view>
+</view>
+
+<view class="options-f">
+  <view class="options" wx:for="{{options}}" wx:key="index">
+    <view style="width: 70px;margin-left: 25px;">
+      <text>选项{{index+1}}： </text>
+    </view>
+    <input placeholder="选项{{index+1}}" value="{{item}}" bindinput="optionChange" data-index="{{index}}" />
+    <image style="{{high_image_style}}" src="/images/del-option.png" bind:tap="delOptionBtn" data-index="{{index}}" />
+  </view>
+</view>
+
+<view class="btn-f">
+  <button class="addOptionBtn" bind:tap="addOption">添加选项</button>
+  <button class="newOptionBtn" bind:tap="newOption">创建投票</button>
+</view>

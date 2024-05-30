@@ -1,0 +1,98 @@
+page {
+  background: -webkit-linear-gradient(top, #b5edbc, #90ea9a, #71e67e);
+}
+
+.f {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.fff {
+  position: absolute;
+  width: 100vw;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.signin {
+  color: white;
+  text-align: center;
+  font-size: 37px;
+  font-weight: 900;
+}
+
+.pi {
+  display: flex;
+  background-color: #89e2ad;
+  display: flex;
+  align-items: center;
+  border-radius: 1000px;
+  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.12);
+  font-weight: 550;
+  margin-left: 7.5%;
+  margin-right: 7.5%;
+  height: 50px;
+  margin-top: 20px;
+}
+
+.pi-image {
+  width: 50px;
+  height: 50px;
+  margin-left: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input {
+  height: 50px;
+  width: 100%;
+  margin-right: 40px;
+  margin-left: 10px;
+  color: white;
+  font-size: 19px;
+}
+
+.phone-photo {
+  width: 40px;
+}
+
+.p-photo {
+  width: 40px;
+}
+
+.inputplaceholder {
+  color: rgba(128, 128, 128, 0.6);
+  text-align: center;
+  font-size: 18px;
+}
+
+
+.rr button {
+  color: #30cd51;
+  width: 140px;
+  margin-top: 45px;
+  border-radius: 15px;
+  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.12);
+}
+
+.code {
+  display: flex;
+  height: 50px;
+  margin-right: 7.5%;
+}
+
+.code button {
+  height: 48px;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  color: #30cd51;
+  font-size: 14px;
+  width: 140px;
+  border-radius: 15px;
+  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.12);
+}

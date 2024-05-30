@@ -1,0 +1,8 @@
+{
+  "usingComponents": {},
+  "navigationBarTitleText": "mini投票",
+  "enablePullDownRefresh": true,
+  "backgroundColor": "#adf7c2",
+  "backgroundTextStyle": "dark",
+  "navigationBarBackgroundColor": "#adf7c2"
+}

@@ -1,0 +1,56 @@
+<view class="fff">
+  <view class="f" style="{{isShow}}">
+
+    <view class="search-bar">
+      <button class="newvote-btn" bind:tap="newVote">+</button>
+      <view class="line"></view>
+      <input class="search-input" placeholder=" 请输入搜索关键词" value="{{keyword}}" bindinput="onKeywordSearch"></input>
+      <button class="search-button" bind:tap="searchVote">🔍</button>
+    </view>
+
+    <view class="votes">
+      <view class="vote" bind:tap="voteDetail" wx:key="id" wx:for="{{voteList}}" data-id="{{item.id}}" data-idx="{{index}}">
+
+        <view class="status-f">
+          <view wx:if="{{item.status === 0}}" class="status">
+            <view class="not-publish">未发布</view>
+            <image src="/images/detail/not-publish.png" mode="heightFix" />
+            <view class="a1">𠃍</view>
+          </view>
+          <view wx:if="{{item.status !== 0}}" class="status">
+            <view class="published">已发布</view>
+            <image src="/images/detail/published.png" mode="heightFix" />
+            <view class="a1">𠃍</view>
+          </view>
+        </view>
+
+        <view class="photo-f">
+          <view class="photo">
+            <image src="{{item.url}}" mode="aspectFill" />
+          </view>
+        </view>
+
+        <view class="title">{{item.title}}</view>
+
+        <view class="tail">
+          <view class="a2">㇄</view>
+          <view class="tail-2">{{item.participants}}人已参与</view>
+        </view>
+
+      </view>
+
+      <view class="vote" wx:if="{{keyword === ''}}" bind:tap="newVote">
+        <view class="newV">
+          <image src="/images/new.png" mode="heightFix" class="newV-i" />
+          <view class="newV-t">新建</view>
+        </view>
+      </view>
+    </view>
+
+    <view class="on-bottom">
+      <text wx:if="{{voteList.length > 0}}">已经没有咯</text>
+      <text wx:if="{{voteList.length <= 0}}">还没有投票</text>
+    </view>
+
+  </view>
+</view>

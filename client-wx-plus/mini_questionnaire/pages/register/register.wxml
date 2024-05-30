@@ -1,0 +1,46 @@
+<view class="f">
+  <view class="fff">
+
+    <view class="signin">REGISTER</view>
+    <view class="pi">
+      <view class="pi-image">
+        <image src="/images/login/name.png" mode="widthFix" class="phone-photo" />
+      </view>
+      <input placeholder="账号" placeholder-class="inputplaceholder" bindinput="inputAccount" />
+    </view>
+    <view class="pi">
+      <view class="pi-image">
+        <image src="/images/login/pwd.png" mode="widthFix" class="p-photo" />
+      </view>
+      <input type="password" placeholder="设置密码" placeholder-class="inputplaceholder" bindinput="inputPassword" />
+    </view>
+    <view class="pi">
+      <view class="pi-image">
+        <image src="/images/login/pwd.png" mode="widthFix" class="p-photo" />
+      </view>
+      <input type="password" placeholder="确认密码" placeholder-class="inputplaceholder" bindinput="inputRepassword" />
+    </view>
+    <view class="pi">
+      <view class="pi-image">
+        <image src="/images/login/phone.png" mode="widthFix" class="phone-photo" />
+      </view>
+      <input placeholder="手机号" placeholder-class="inputplaceholder" bindinput="inputPhone" />
+    </view>
+
+    <view class="code">
+      <view class="pi">
+        <view class="pi-image">
+          <image src="/images/login/code.png" mode="widthFix" class="phone-photo" />
+        </view>
+        <view>
+          <input placeholder="验证码" placeholder-class="inputplaceholder" bindinput="inputVerify" style="width: 80%;" />
+        </view>
+      </view>
+      <button bind:tap="getVerifyCode" disabled="{{disableButton}}">{{buttonText}}</button>
+    </view>
+
+    <view class="rr">
+      <button bind:tap="registerAccount">注册</button>
+    </view>
+  </view>
+</view>

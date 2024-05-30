@@ -1,0 +1,42 @@
+<view wx:if="{{!islogin}}" class="notLogin">
+  <text>你还未登录，请先登录</text>
+  <button bind:tap="toLogin">去登录</button>
+</view>
+
+
+<view class="f1" wx:if="{{islogin}}">
+  <view class="f2">
+
+    <view class="header">
+      <view class="header-photo">
+        <image src="{{url}}" mode="aspectFill" />
+      </view>
+      <view class="header-info-f">
+        <!-- 单多选 -->
+        <view class="imc">
+          <radio class="my-radio" bind:tap="radioChange" checked="{{imc}}" disabled="{{true}}" />
+          <text wx:if="{{imc === 0}}" style="color: rgb(120, 120, 120);" bind:tap="radioChange">未开启多选</text>
+          <text wx:if="{{imc !== 0}}" style="color: rgb(78, 196, 102);" bind:tap="radioChange">已开启多选</text>
+        </view>
+        <!-- 标题 -->
+        <view class="title">{{title}}</view>
+      </view>
+    </view>
+
+    <view wx:for="{{optionNames}}" wx:key="index" class="option-f">
+      <view wx:if="{{optionTypes[index] === 0}}" class="option-bg" bind:tap="selectOption" data-idx="{{index}}">
+        <text class="option-l">{{optionL[index]}}</text>
+        <text class="option-name">. {{optionNames[index]}}</text>
+      </view>
+
+      <view wx:if="{{optionTypes[index] !== 0}}" style="background-color: #bdeab0;" class="option-bg" bind:tap="selectOption" data-idx="{{index}}">
+        <text class="option-l">{{optionL[index]}}</text>
+        <text class="option-name">. {{optionNames[index]}}</text>
+      </view>
+    </view>
+
+  </view>
+  <view class="voteBtn" bind:tap="doVote">
+    <button>提交</button>
+  </view>
+</view>

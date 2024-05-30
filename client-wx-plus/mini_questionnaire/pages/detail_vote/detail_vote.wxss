@@ -1,0 +1,175 @@
+page {
+  background-color: #adf7c2;
+  width: 100vw;
+  height: 100vh;
+}
+
+.f1 {
+  width: 100%;
+  padding: 5%;
+  padding-top: 8%;
+}
+
+.f2 {
+  background-color: white;
+  width: 90%;
+  margin-left: -5px;
+  border-radius: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.header {
+  width: 100%;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+  margin-bottom: 30px;
+}
+
+.header-photo {
+  height: 100%;
+  width: 39.5%;
+  display: flex;
+  align-items: center;
+  margin-left: 6px;
+}
+
+.header image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15%;
+}
+
+.header-info-f {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.imc {
+  width: 90%;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 11px;
+  height: 16px;
+  align-items: center;
+}
+
+.my-radio {
+  transform: scale(1);
+  -webkit-transform: scale(0.45);
+}
+
+.title {
+  font-size: 17px;
+  font-weight: 900;
+  padding-right: 10%;
+  padding-left: 10%;
+  height: auto;
+  padding-top: 2%;
+  margin-bottom: 5px;
+}
+
+.status-f {
+  display: flex;
+  height: 10px;
+  align-items: center;
+}
+
+.status-t {
+  font-size: 11.5px;
+  padding-right: 3%;
+  padding-left: 10%;
+}
+
+.option-f {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 15px;
+  margin-left: 2.5%;
+}
+
+.option-bg {
+  background-color: #d4d5d2;
+  width: 95%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  border-radius: 15px;
+}
+
+.option-l {
+  font-size: 16px;
+  padding-top: 1.5px;
+  font-weight: 800;
+  margin-left: 8%;
+}
+
+.option-name {
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.func-btn {
+  display: flex;
+  justify-content: center;
+}
+
+.func-btn button {
+  width: 130px;
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+  height: 40px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.func-btn button:nth-child(1) {
+  margin-right: 28.9px;
+  background-color: #4ec466;
+
+}
+
+.func-btn button:nth-child(2) {
+  background-color: #d06d5a;
+}
+
+.showCount {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  letter-spacing: 2px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.showCount button {
+  border: 2px solid grey;
+  background-color: white;
+  border-radius: 10px;
+  width: 90%;
+  margin-top: 10%;
+}
+
+.my-chart {
+  width: 730rpx;
+  height: 650rpx;
+  margin: auto auto;
+}
+
+ec-canvas {
+  width: 100%;
+  height: 100%;
+}

@@ -1,0 +1,8 @@
+{
+  "usingComponents": {},
+  "navigationBarTitleText": "mini问卷",
+  "enablePullDownRefresh": true,
+  "backgroundColor": "#292929",
+  "backgroundTextStyle": "light",
+  "navigationBarBackgroundColor": "#adf7c2"
+}

@@ -1,0 +1,116 @@
+page {
+  background: -webkit-linear-gradient(top, #a9f1b2, #7af188, #a9f1b2);
+}
+
+.f1 {
+  display: flex;
+}
+
+.photo-f {
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 3%;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.photo-f button {
+  margin: 0;
+  padding: 0;
+  width: 35vw;
+  height: 35vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #89e2ad;
+  border: 2px solid #4ec466;
+  border-radius: 10px;
+  color: rgba(120, 120, 120, 0.8);
+}
+
+.photo-btn-1 {
+  font-weight: 550;
+  font-size: 25px;
+  margin-top: -10%;
+}
+
+.photo-btn-2 {
+  font-size: 20px;
+}
+
+.photo {
+  margin-right: 5%;
+  width: 35vw;
+  height: 35vw;
+  object-position: center;
+  object-fit: cover;
+}
+
+.title {
+  width: 35vw;
+  height: 35vw;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 3%;
+}
+
+.title-i {
+  color: rgba(120, 120, 120, 1);
+  font-weight: 550;
+  height: 5vw;
+  margin-left: 3px;
+  display: flex;
+  align-items: center;
+}
+
+.title-area {
+  width: 40vw;
+  height: 30vw;
+  padding: 2%;
+  color: black;
+  font-size: 20px;
+  resize: none;
+}
+
+.options-f {
+  margin-top: 15px;
+}
+
+.options {
+  display: flex;
+  background-color: #89e2ad;
+  margin-bottom: 15px;
+  height: 40px;
+  align-items: center;
+  color: #ffffff;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  border: 2px solid #4ec466;
+  border-radius: 10px;
+}
+
+.options image {
+  margin-top: 2px;
+  width: 19px;
+  height: 19px;
+  margin-left: 8%;
+}
+
+.btn-f {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+  padding-bottom: 25px;
+}
+
+.btn-f button {
+  width: 130px;
+  color: #4ec466;
+  border: 2px solid #4ec466;
+  border-radius: 10px;
+  margin-left: 15px;
+  margin-right: 15px;
+}

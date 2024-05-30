@@ -1,0 +1,29 @@
+<view class="f">
+
+<view class="fff">
+  <view class="signin">SIGN IN</view>
+
+  <view class="uuu">
+    <image src="/images/login/phone.png" mode="widthFix" class="u-photo" />
+    <input class="u-input" placeholder="手机号" placeholder-class="inputplaceholder" bindinput="inputPhone" />
+  </view>
+
+  <view class="rrr">
+    <view class="ppp">
+      <input placeholder="验证码" placeholder-class="inputplaceholder" class="p-input" bindinput="inputVerify" />
+      <image src="/images/login/code.png" mode="widthFix" class="p-photo" />
+    </view>
+    <button bind:tap="getVerifyCode" disabled="{{disableButton}}">{{buttonText}}</button>
+  </view>
+
+</view>
+
+<view class="btn-area" id="btn-area">
+  <canvas canvas-id="myCanvas" style="width: 100vw; height: 100%;z-index: 1;"></canvas>
+</view>
+
+<view class="btn-area" id="btn-area">
+  <canvas class="btn-l" canvas-id="myCanvas2" style="width: 100vw; height: 100%;z-index: 2;" bind:tap="onCanvasClick"></canvas>
+</view>
+
+</view>

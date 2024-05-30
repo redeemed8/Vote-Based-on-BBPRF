@@ -1,0 +1,7 @@
+server:
+  port: 4847
+
+mysql:
+  dns: 数据库用户:数据库密码@tcp(127.0.0.1:3306)
+  basename: 数据库名称
+  others: charset=utf8mb4&parseTime=True&loc=Local

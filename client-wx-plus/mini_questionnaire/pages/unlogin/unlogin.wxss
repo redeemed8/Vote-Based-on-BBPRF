@@ -1,0 +1,67 @@
+.f {
+  position: relative;
+  height: 100vh;
+  background: radial-gradient(#68D3A9 0%, #68D3A9 0%, #8BE3AE 44%, #A9F1B2 73%);
+}
+
+.fff {
+  position: absolute;
+  width: 100vw;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.vvv1 {
+  display: flex;
+  justify-content: center;
+}
+
+.vvv2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 9.01%;
+  margin-bottom: 22%;
+  margin-left: -11rpx;
+}
+
+.fff button {
+  width: 41.1%;
+}
+
+.bbb {
+  background-color: rgba(255, 255, 255, 1);
+  color: #000000;
+  border: 2rpx solid #EADE9A;
+  font-size: 30rpx;
+  border-radius: 170rpx;
+  font-weight: 500;
+  margin-bottom: 7.96%;
+  box-shadow: 0 8rpx 6rpx rgba(0, 0, 0, 0.1);
+}
+
+.fff button:active {
+  opacity: 0.9;
+}
+
+.logined {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logined text {
+  color: #d0a55a;
+  font-size: 35px;
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.logined image {
+  width: 23px;
+  margin-left: 15px;
+  margin-top: 58px;
+}

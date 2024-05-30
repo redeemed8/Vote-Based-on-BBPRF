@@ -1,0 +1,121 @@
+page {
+  background: -webkit-linear-gradient(top, #b5edbc, #90ea9a, #71e67e);
+}
+
+.f {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.fff {
+  position: absolute;
+  width: 100vw;
+  height: 74.3%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.signin {
+  color: white;
+  text-align: center;
+  font-size: 37px;
+  font-weight: 900;
+}
+
+.uuu {
+  background-color: #89e2ad;
+  height: 10px;
+  margin-top: 60px;
+  margin-bottom: 10%;
+  width: 267.5px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-top-left-radius: 1000px;
+  border-bottom-left-radius: 1000px;
+  height: 70px;
+  float: right;
+  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.12);
+  display: flex;
+  align-items: center;
+}
+
+.u-photo {
+  width: 50px;
+  margin-left: 15px;
+}
+
+.u-input {
+  color: white;
+  height: 45px;
+  width: 180px;
+  margin-left: 10px;
+  font-size: 25px;
+  font-weight: 550;
+}
+
+.ppp {
+  float: left;
+  background-color: #89e2ad;
+  height: 10px;
+  width: 530rpx;
+  height: 70px;
+  border-top-right-radius: 1000px;
+  border-bottom-right-radius: 1000px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.p-photo {
+  width: 43px;
+  margin-right: 30px;
+}
+
+.p-input {
+  color: white;
+  height: 45px;
+  width: 175px;
+  margin-right: 15px;
+  margin-left: 15px;
+  font-size: 20px;
+  font-weight: 550;
+}
+
+.inputplaceholder {
+  color: rgba(240, 240, 240, 0.95);
+  text-align: center;
+  font-size: 20px;
+}
+
+.btn-area {
+  position: absolute;
+  width: 100vw;
+  top: 74.3%;
+  height: 25.7%;
+}
+
+.rrr {
+  display: flex;
+  float: left;
+  align-items: center;
+}
+
+.rrr button {
+  height: 120rpx;
+  width: 190rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5px;
+  margin-right: 5px;
+  border-radius: 1000px;
+  background-color: #4ec466;
+  color: white;
+  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.12);
+}

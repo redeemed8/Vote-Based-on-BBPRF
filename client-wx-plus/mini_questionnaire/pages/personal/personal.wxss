@@ -1,0 +1,29 @@
+page {
+  background-color: #a9f1b2;
+}
+
+.f {
+  width: 100vw;
+  height: 100vh;
+}
+
+.ii {
+  background-color: #89e2ad;
+  margin-left: 8%;
+  margin-right: 8%;
+  height: 5%;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  padding-left: 6%;
+  padding-right: 6%;
+  margin-top: 10%;
+  margin-bottom: 5%;
+  border-radius: 10px;
+}
+
+.f button {
+  width: 40%;
+  background-color: #4ec466;
+  color: white;
+}

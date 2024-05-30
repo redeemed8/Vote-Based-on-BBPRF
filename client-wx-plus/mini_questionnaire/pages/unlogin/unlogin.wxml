@@ -1,0 +1,16 @@
+<view class="f" style="{{buttonStyle}}">
+  <view class="fff">
+
+    <view class="vvv1">
+      <image src="/images/tabbar/index-v.png" mode="widthFix" style="width: 60px; height: auto;"></image>
+    </view>
+
+    <view class="vvv2">
+      <image src="/images/vottee-2.png" mode="widthFix" style="width: 230px; height: auto;"></image>
+    </view>
+
+    <button bind:tap="accountLogin" class="bbb">账号登录</button>
+    <button bind:tap="phoneLogin" class="bbb">手机号登录</button>
+
+  </view>
+</view>

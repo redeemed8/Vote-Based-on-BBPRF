@@ -1,0 +1,52 @@
+<view class="f1">
+  <view class="f2">
+
+    <view class="header">
+      <view class="header-photo">
+        <image src="{{url}}" mode="aspectFill" />
+      </view>
+      <view class="header-info-f">
+        <!-- 单多选 -->
+        <view class="imc">
+          <radio class="my-radio" bind:tap="radioChange" checked="{{imc}}" />
+          <text wx:if="{{imc === 0}}" style="color: rgb(120, 120, 120);" bind:tap="radioChange">未开启多选</text>
+          <text wx:if="{{imc !== 0}}" style="color: rgb(78, 196, 102);" bind:tap="radioChange">已开启多选</text>
+        </view>
+        <!-- 标题 -->
+        <view class="title">{{title}}</view>
+        <!-- 发布状态 -->
+        <view class="status-f" wx:if="{{status === 0}}">
+          <view style="color: rgb(120, 120, 120);" class="status-t">状态：未发布</view>
+          <image src="/images/detail/not-publish.png" mode="heightFix" />
+        </view>
+        <view class="status-f" wx:if="{{status !== 0}}">
+          <view style="color: rgb(78, 196, 102);" class="status-t">状态：已发布</view>
+          <image src="/images/detail/published.png" mode="heightFix" />
+        </view>
+      </view>
+    </view>
+
+    <view wx:for="{{optionNames}}" wx:key="index" class="option-f">
+      <view class="option-bg">
+        <text class="option-l">{{optionL[index]}}</text>
+        <text class="option-name">. {{optionNames[index]}}</text>
+      </view>
+    </view>
+
+  </view>
+</view>
+
+<view class="func-btn">
+  <button wx:if="{{status === 0}}" bind:tap="publish">发布投票</button>
+  <button wx:if="{{status !== 0}}" bind:tap="publish">停止发布</button>
+  <button bind:tap="delete">删除投票</button>
+</view>
+
+<view class="showCount">
+  <button bind:tap="showCount" style="{{tj_color}}">{{btnText}}</button>
+  <!-- <view bind:tap="showCount" style="{{tj_color}}">{{btnText}}</view> -->
+</view>
+
+<view class="my-chart" style="{{ecShow}}">
+  <ec-canvas id="lazy-mychart-dom" canvas-id="lazy-mychart" ec="{{lazyEc}}"></ec-canvas>
+</view>

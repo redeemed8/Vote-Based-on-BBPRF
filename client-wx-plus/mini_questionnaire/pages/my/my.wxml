@@ -1,0 +1,58 @@
+<view class="header">
+  <button open-type="chooseAvatar" bindchooseavatar="onChooseAvatar">
+    <image src="{{avatarUrl}}" mode="heightFix" class="header-i" />
+  </button>
+  <view class="header-n">{{nickname}}</view>
+</view>
+
+<view class="total">
+  <view class="total-1">
+    <view class="total-f">
+      <view class="total-word">已积累发布问卷</view>
+      <view class="total-i-f">
+        <view class="total-i-n">{{qnum}}</view>
+        <view class="total-i-n2">份</view>
+        <image src="/images/q-i.png" mode="heightFix" class="total-i-i" />
+      </view>
+    </view>
+  </view>
+
+  <view class="total-2">
+    <view class="total-f">
+      <view class="total-word">已积累发布投票</view>
+      <view class="total-i-f">
+        <view class="total-i-n">{{vnum}}</view>
+        <view class="total-i-n2">份</view>
+        <image src="/images/v-i.png" mode="heightFix" class="total-i-i" />
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class="options">
+
+  <view class="option" bind:tap="set">
+    <image src="/images/my/my-set.png" mode="heightFix" class="option-1" />
+    <view class="option-2">个人设置</view>
+    <image src="/images/my/my-r.png" mode="heightFix" class="option-3" />
+  </view>
+
+  <view class="option" bind:tap="sug">
+    <image src="/images/my/my-sug.png" mode="heightFix" class="option-1" />
+    <view class="option-2">反馈建议</view>
+    <image src="/images/my/my-r.png" mode="heightFix" class="option-3" />
+  </view>
+
+  <view class="option" bind:tap="pro">
+    <image src="/images/my/my-pro.png" mode="heightFix" class="option-1" />
+    <view class="option-2">隐私协议</view>
+    <image src="/images/my/my-r.png" mode="heightFix" class="option-3" />
+  </view>
+
+  <view class="option" bind:tap="exit">
+    <image src="/images/my/my-exit.png" mode="heightFix" class="option-1" />
+    <view class="option-2">退出登录</view>
+    <image src="/images/my/my-r.png" mode="heightFix" class="option-3" />
+  </view>
+
+</view>

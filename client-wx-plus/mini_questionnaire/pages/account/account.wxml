@@ -1,0 +1,29 @@
+<view class="f">
+
+  <view class="fff">
+    <view class="signin">SIGN IN</view>
+
+    <view class="uuu">
+      <image src="/images/login/name.png" mode="widthFix" class="u-photo" />
+      <input class="u-input" placeholder="账号" placeholder-class="inputplaceholder" bindinput="inputAccount" />
+    </view>
+
+    <view class="rrr">
+      <view class="ppp">
+        <input type="password" placeholder="密码" placeholder-class="inputplaceholder" class="p-input" bindinput="inputPassword" />
+        <image src="/images/login/pwd.png" mode="widthFix" class="p-photo" />
+      </view>
+      <button class="register" bind:tap="register">注册</button>
+    </view>
+
+  </view>
+
+  <view class="btn-area" id="btn-area">
+    <canvas canvas-id="myCanvas" style="width: 100vw; height: 100%;z-index: 1;"></canvas>
+  </view>
+
+  <view class="btn-area" id="btn-area">
+    <canvas class="btn-l" canvas-id="myCanvas2" style="width: 100vw; height: 100%;z-index: 2;" bind:tap="onCanvasClick"></canvas>
+  </view>
+
+</view>

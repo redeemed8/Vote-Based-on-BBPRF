@@ -1,0 +1,28 @@
+<view class="f">
+  <view class="t1">
+    <view class="t1-1">welcome</view>
+    <image src="/images/welcome.png" mode="heightFix" class="t1-2" />
+  </view>
+
+  <view class="t2">
+    <view class="t2-f">
+      <view class="t2-1">正在进行中ing</view>
+      <view class="t2-2">
+        <image src="https://pvs.81jcpd.cn/2024/05/24/64/64a0dd7bce7bb23bafb28e3e7b7227f5.jpg" mode="heightFix" class="t2-2-1" />
+        <view class="t2-2-2">最喜欢哪种饮品?</view>
+      </view>
+    </view>
+  </view>
+
+  <view class="t3">
+    <view class="t3-1" bind:tap="newQ">
+      <image src="/images/new.png" mode="widthFix" class="t3-new" />
+      <view class="t3-t">新建问卷</view>
+    </view>
+    <view class="t3-2" bind:tap="newV">
+      <image src="/images/new.png" mode="widthFix" class="t3-new" />
+      <view class="t3-t">新建投票</view>
+    </view>
+  </view>
+
+</view>

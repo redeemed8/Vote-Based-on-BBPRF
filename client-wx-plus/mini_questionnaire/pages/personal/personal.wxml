@@ -1,0 +1,9 @@
+<view class="f">
+
+  <view class="ii">
+    <input type="text" style="width: 100%;" placeholder="新的昵称" bindinput="changeNickname" />
+  </view>
+
+  <button bind:tap="update">修改昵称</button>
+
+</view>
