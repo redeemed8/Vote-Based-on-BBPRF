@@ -2,7 +2,7 @@
 
 ## 基于Vote-Based-on-VOPRF和SM2的投票系统
 
-
+### 
 
 ## ***1.服务器密钥生成***
 
@@ -18,7 +18,7 @@ $$
 \end{equation}
 $$
 
-
+### 
 
 ## ***2.客户端注册并获取公钥***
 
@@ -30,7 +30,7 @@ $$
 \end{equation}
 $$
 
-
+### 
 
 ## ***3.客户端请求给盲化token签名***
 
@@ -51,6 +51,8 @@ $$
 tag \quad {\small ←}\quad v \quad {\small ←}\quad G^{[{u_c+H(mag)]}^{-1}} \quad {\small ←}\quad F_{DY}(u_c,\ H(msg))
 \end{equation}
 $$
+
+### 
 
 ## ***4.服务端给token签名***
 
@@ -76,7 +78,7 @@ blindPRF \quad {\small ←}\quad \{ \ F =G^{β^{-1}}, \ ... \  \}
 \end{equation}
 $$
 
-
+### 
 
 ## ***5.客户端对签名token进行去盲化***
 
@@ -86,7 +88,7 @@ tok  \quad {\small ←}\quad \tau \quad {\small ←}\quad F^a \quad {\small ←}
 \end{equation}
 $$
 
-
+### 
 
 ## ***6.向服务器验证token***
 
