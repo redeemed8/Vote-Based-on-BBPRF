@@ -32,7 +32,7 @@ $$
 
 $$
 \begin{equation}
-digest\quad {\small ←}\quad ct_β \quad {\small ←}\quad Enc(pk_{cs},am+bp)+a*ct_u
+digest\quad {\small ←}\quad ct_β \quad {\small ←}\quad Enc(pk_{cs},am+bp)+a*ct_u+a*r*ct_y
 \end{equation}
 $$
 
